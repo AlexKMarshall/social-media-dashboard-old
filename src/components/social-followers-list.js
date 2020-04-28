@@ -10,7 +10,7 @@ const SocialFollowersList = () => {
       {channelIds.map((channelId) => {
         return (
           <li key="channelId">
-            <ChannelCard id="channelId" />
+            <ChannelCard id={channelId} />
           </li>
         );
       })}
