@@ -1,18 +1,25 @@
 import React from "react";
+import SocialLogo from "./social-logo";
 
-const ChannelCard = ({ id }) => {
+const ChannelCard = ({
+  channel,
+  userName,
+  followerCount,
+  followerDescription,
+  dailyFollowerChange,
+}) => {
   return (
     <section>
       <header>
-        <div>Channel Logo</div>
-        <div>username</div>
+        <SocialLogo brand={channel} />
+        <div>{channel} Logo</div>
+        <div>{userName}</div>
       </header>
-      <div>1234</div>
-      <div>followers</div>
-      I'm a card for network number {id}
+      <div>{followerCount}</div>
+      <div>{followerDescription || "followers"}</div>
       <footer>
-        <div>direction icon</div>
-        <div>follower delta</div>
+        <div>{dailyFollowerChange > 0 ? "Up" : "Down"}</div>
+        <div>{dailyFollowerChange}</div>
         Today
       </footer>
     </section>
