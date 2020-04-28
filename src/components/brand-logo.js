@@ -5,10 +5,10 @@ const brandToFAMap = {
   youtube: "youtube",
 };
 
-const SocialLogo = ({ brand }) => {
+const BrandLogo = ({ brand }) => {
   const fontAwesomeClass = `fab fa-${brandToFAMap[brand]}`;
 
   return <i className={fontAwesomeClass}></i>;
 };
 
-export default SocialLogo;
+export default BrandLogo;

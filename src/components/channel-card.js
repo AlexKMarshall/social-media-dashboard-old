@@ -1,5 +1,5 @@
 import React from "react";
-import SocialLogo from "./social-logo";
+import BrandLogo from "./brand-logo";
 
 const ChannelCard = ({
   channel,
@@ -11,8 +11,7 @@ const ChannelCard = ({
   return (
     <section>
       <header>
-        <SocialLogo brand={channel} />
-        <div>{channel} Logo</div>
+        <BrandLogo brand={channel} />
         <div>{userName}</div>
       </header>
       <div>{followerCount}</div>
