@@ -19,7 +19,6 @@ const ChannelCard = ({
       <div>{followerDescription || "followers"}</div>
       <footer>
         <UpDownIndicator change={dailyFollowerChange} />
-        <div>{dailyFollowerChange > 0 ? "Up" : "Down"}</div>
         <div>{Math.abs(dailyFollowerChange)}</div>
         Today
       </footer>
