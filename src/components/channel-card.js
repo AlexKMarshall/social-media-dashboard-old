@@ -1,5 +1,6 @@
 import React from "react";
 import BrandLogo from "./brand-logo";
+import UpDownIndicator from "./up-down-indicator";
 
 const ChannelCard = ({
   channel,
@@ -17,8 +18,9 @@ const ChannelCard = ({
       <div>{followerCount}</div>
       <div>{followerDescription || "followers"}</div>
       <footer>
+        <UpDownIndicator change={dailyFollowerChange} />
         <div>{dailyFollowerChange > 0 ? "Up" : "Down"}</div>
-        <div>{dailyFollowerChange}</div>
+        <div>{Math.abs(dailyFollowerChange)}</div>
         Today
       </footer>
     </section>

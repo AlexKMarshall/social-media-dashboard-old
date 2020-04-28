@@ -30,7 +30,7 @@ const SocialFollowersList = () => {
           <li key={channel.id}>
             <ChannelCard
               channel={channel.channel}
-              username={channel.userName}
+              userName={channel.userName}
               followerCount={channel.followerCount}
               followerDescription={channel.followerDescription}
               dailyFollowerChange={channel.dailyFollowerChange}
