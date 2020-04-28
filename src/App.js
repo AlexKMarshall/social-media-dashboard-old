@@ -1,14 +1,9 @@
 import React from "react";
 import "./App.css";
-import TotalFollowers from "./components/total-followers";
+import Dashboard from "./components/dashboard";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Social Media Dashboard</h1>
-      <TotalFollowers />
-    </div>
-  );
+  return <Dashboard />;
 }
 
 export default App;
