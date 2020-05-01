@@ -13,7 +13,7 @@ const ChannelCard = ({
   return (
     <section className="card">
       <header>
-        <BrandLogo brand={channel} />
+        <BrandLogo className="logo" brand={channel} />
         <div>{userName}</div>
       </header>
       <div>{followerCount}</div>

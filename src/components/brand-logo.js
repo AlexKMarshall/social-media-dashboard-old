@@ -6,8 +6,8 @@ const faBrandName = {
   youtube: "youtube",
 };
 
-const BrandLogo = ({ brand }) => {
-  return <FontAwesomeIcon icon={["fab", faBrandName[brand]]} />;
+const BrandLogo = ({ className, brand }) => {
+  return <FontAwesomeIcon size="lg" icon={["fab", faBrandName[brand]]} />;
 };
 
 export default BrandLogo;
