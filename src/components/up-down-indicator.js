@@ -1,14 +1,15 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const faIconMap = {
-  up: "fas fa-caret-up",
-  down: "fas fa-caret-down",
+const faIconName = {
+  up: "caret-up",
+  down: "caret-down",
 };
 
 const UpDownIndicator = ({ change }) => {
   const direction = change > 0 ? "up" : "down";
-  const iconClass = faIconMap[direction];
-  return <i className={iconClass}></i>;
+
+  return <FontAwesomeIcon icon={faIconName[direction]} />;
 };
 
 export default UpDownIndicator;
