@@ -17,8 +17,8 @@ const ChannelCard = ({
         <BrandLogo brand={channel} />
         <div>{userName}</div>
       </header>
-      <div>{followerCount}</div>
-      <div>{followerDescription || "followers"}</div>
+      <div className="big-number">{followerCount}</div>
+      <div className="stat-label">{followerDescription || "followers"}</div>
       <footer>
         <UpDownIndicator change={dailyFollowerChange} />
         <div>{Math.abs(dailyFollowerChange)}</div>

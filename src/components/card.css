@@ -19,6 +19,17 @@
   font-weight: 700;
 }
 
+.card .big-number {
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.card .stat-label {
+  font-size: 12px;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+}
+
 .card footer {
   display: flex;
   justify-content: center;
