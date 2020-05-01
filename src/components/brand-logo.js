@@ -7,7 +7,7 @@ const faBrandName = {
 };
 
 const BrandLogo = ({ className, brand }) => {
-  return <FontAwesomeIcon size="lg" icon={["fab", faBrandName[brand]]} />;
+  return <FontAwesomeIcon size="2x" icon={["fab", faBrandName[brand]]} />;
 };
 
 export default BrandLogo;
