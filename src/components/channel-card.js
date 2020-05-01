@@ -2,6 +2,7 @@ import React from "react";
 import BrandLogo from "./brand-logo";
 import UpDownIndicator from "./up-down-indicator";
 import "./card.css";
+import getBrandColor from "../utils/brand-color";
 
 const ChannelCard = ({
   channel,
@@ -12,7 +13,7 @@ const ChannelCard = ({
 }) => {
   return (
     <section className="card">
-      <header>
+      <header style={{ borderTopColor: getBrandColor(channel) }}>
         <BrandLogo brand={channel} />
         <div>{userName}</div>
       </header>

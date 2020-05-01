@@ -1,20 +1,16 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import getBrandColor from "../utils/brand-color";
 
 const faBrandName = {
   facebook: "facebook-square",
   youtube: "youtube",
 };
 
-const brandColors = {
-  facebook: "hsl(195, 100%, 50%)",
-  youtube: "hsl(348, 97%, 39%)",
-};
-
 const BrandLogo = ({ size = "2x", brand }) => {
   return (
     <FontAwesomeIcon
-      style={{ color: brandColors[brand] }}
+      style={{ color: getBrandColor(brand) }}
       size={size}
       icon={["fab", faBrandName[brand]]}
     />
