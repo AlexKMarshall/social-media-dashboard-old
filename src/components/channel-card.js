@@ -1,6 +1,7 @@
 import React from "react";
 import BrandLogo from "./brand-logo";
 import UpDownIndicator from "./up-down-indicator";
+import "./card.css";
 
 const ChannelCard = ({
   channel,
@@ -10,7 +11,7 @@ const ChannelCard = ({
   dailyFollowerChange,
 }) => {
   return (
-    <section>
+    <section className="card">
       <header>
         <BrandLogo brand={channel} />
         <div>{userName}</div>
