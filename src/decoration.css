@@ -1,0 +1,42 @@
+.dashboard > header {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+@media screen and (min-width: 600px) {
+  .dashboard > header {
+    border: none;
+  }
+}
+
+.rounded-corner {
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.card {
+  transition: all 300ms;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card.headline {
+  /* styles for the border stripe */
+  position: relative;
+  background-clip: padding-box;
+  border-top: solid 4px transparent;
+}
+
+.card.headline::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 1px; /* avoid rounding errors making this show on the bottom */
+  left: 0;
+  z-index: -1;
+  margin-top: -4px;
+  background: var(--brand-color);
+}

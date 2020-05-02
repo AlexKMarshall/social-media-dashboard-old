@@ -1,0 +1,40 @@
+:root {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dashboard h1 {
+  font-size: 24px;
+}
+
+.dashboard h2 {
+  font-size: 21px;
+}
+
+.card.headline {
+  font-size: 12px;
+}
+
+.card.headline .big-number {
+  font-size: 54px;
+}
+
+.card.overview .big-number {
+  font-size: 30px;
+}
+
+.card.headline .stat-label {
+  font-weight: 400;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+}
+
+.value-change {
+  font-size: 12px;
+}

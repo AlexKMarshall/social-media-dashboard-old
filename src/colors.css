@@ -1,0 +1,24 @@
+body {
+  color: hsl(228, 12%, 44%);
+  border-color: hsl(228, 12%, 44%);
+}
+
+.impact-text {
+  color: hsl(230, 17%, 14%);
+}
+
+.card {
+  background-color: hsl(227, 47%, 96%);
+}
+
+.card:hover {
+  background-color: hsl(232, 33%, 91%);
+}
+
+.value-change.up {
+  color: hsl(163, 72%, 41%);
+}
+
+.value-change.down {
+  color: hsl(356, 69%, 56%);
+}

@@ -1,6 +1,5 @@
 import React from "react";
 import BrandLogo from "./brand-logo";
-import "./card.css";
 import ValueChange from "./value-change";
 import formatBigNumber from "../utils/format-big-number";
 import RoundedCorner from "./rounded-corner";
