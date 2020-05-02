@@ -18,10 +18,12 @@
   background: var(--main-bg-color);
   color: var(--main-text-color);
   border-color: var(--main-text-color);
+  transition: all 300ms;
 }
 
 .impact-text {
   color: var(--impact-text-color);
+  transition: all 300ms;
 }
 
 .card {
