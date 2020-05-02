@@ -10,6 +10,12 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  transition: all 300ms;
+}
+
+.card:hover {
+  background-color: hsl(232, 33%, 91%);
+  cursor: pointer;
 }
 
 .card.headline {
