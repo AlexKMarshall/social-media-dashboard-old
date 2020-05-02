@@ -6,9 +6,7 @@ const faIconName = {
   down: "caret-down",
 };
 
-const UpDownIndicator = ({ change }) => {
-  const direction = change > 0 ? "up" : "down";
-
+const UpDownIndicator = ({ direction }) => {
   return <FontAwesomeIcon icon={faIconName[direction]} />;
 };
 

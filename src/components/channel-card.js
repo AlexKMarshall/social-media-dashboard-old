@@ -1,8 +1,8 @@
 import React from "react";
 import BrandLogo from "./brand-logo";
-import UpDownIndicator from "./up-down-indicator";
 import "./card.css";
 import getBrandColor from "../utils/brand-color";
+import DailyFollowerChange from "./daily-follower-change";
 
 const ChannelCard = ({
   channel,
@@ -20,9 +20,7 @@ const ChannelCard = ({
       <div className="big-number">{followerCount}</div>
       <div className="stat-label">{followerDescription || "followers"}</div>
       <footer>
-        <UpDownIndicator change={dailyFollowerChange} />
-        <div>{Math.abs(dailyFollowerChange)}</div>
-        Today
+        <DailyFollowerChange change={dailyFollowerChange} />
       </footer>
     </section>
   );

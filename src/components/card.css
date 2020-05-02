@@ -6,6 +6,7 @@
   background-color: hsl(227, 47%, 96%);
   border-radius: 5px;
   overflow: hidden;
+  font-size: 12px;
 }
 
 .card header {
@@ -30,11 +31,20 @@
   text-transform: uppercase;
 }
 
-.card footer {
+.card .daily-follower-change {
   display: flex;
   justify-content: center;
 }
 
-.card footer * {
+.card .daily-follower-change * {
   margin: 0 0.125em;
+  font-weight: 700;
+}
+
+.card footer .up {
+  color: hsl(163, 72%, 41%);
+}
+
+.card footer .down {
+  color: hsl(356, 69%, 56%);
 }
