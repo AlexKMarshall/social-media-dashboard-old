@@ -3,6 +3,7 @@ import BrandLogo from "./brand-logo";
 import "./card.css";
 import getBrandColor from "../utils/brand-color";
 import ValueChange from "./value-change";
+import formatBigNumber from "./../utils/format-big-number";
 
 const ChannelCard = ({
   channel,
@@ -30,14 +31,6 @@ const ChannelCard = ({
       </footer>
     </section>
   );
-};
-
-const formatBigNumber = (number) => {
-  const breakPointK = 10000;
-  if (number < breakPointK) return number;
-
-  const thousands = Math.floor(number / 1000);
-  return `${thousands}k`;
 };
 
 export default ChannelCard;
