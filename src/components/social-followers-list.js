@@ -12,6 +12,20 @@ const dataStore = [
   },
   {
     id: 2,
+    channel: "twitter",
+    userName: "@nathanf",
+    followerCount: 1044,
+    dailyFollowerChange: 99,
+  },
+  {
+    id: 3,
+    channel: "instagram",
+    userName: "@realnathanf",
+    followerCount: 11059,
+    dailyFollowerChange: 1099,
+  },
+  {
+    id: 4,
     channel: "youtube",
     userName: "Nathan F.",
     followerCount: "8239",
