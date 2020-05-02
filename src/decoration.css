@@ -33,9 +33,9 @@
   content: " ";
   position: absolute;
   top: 0;
-  right: 0;
+  right: 1px;
   bottom: 1px; /* avoid rounding errors making this show on the bottom */
-  left: 0;
+  left: 1px;
   z-index: -1;
   margin-top: -4px;
   background: var(--brand-color);
