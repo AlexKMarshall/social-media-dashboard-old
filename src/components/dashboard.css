@@ -2,6 +2,10 @@
   margin: 50px 25px;
 }
 
+header {
+  font-weight: 700;
+}
+
 .dashboard > header {
   font-weight: 700;
   padding-bottom: 25px;

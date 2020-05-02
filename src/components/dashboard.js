@@ -19,7 +19,14 @@ const Dashboard = () => {
         <TotalFollowers count={totalFollowers} />
       </header>
       {/* <DarkModeSwitch /> */}
-      <SocialFollowersList followerData={followerData} />
+      <section id="headlines">
+        <SocialFollowersList followerData={followerData} />
+      </section>
+      <section id="overview">
+        <header>
+          <h2>Overview - Today</h2>
+        </header>
+      </section>
     </div>
   );
 };
