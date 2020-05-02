@@ -1,12 +1,9 @@
 import React from "react";
 import BrandLogo from "./brand-logo";
 import "./card.css";
-// import getBrandColor from "../utils/brand-color";
 import ValueChange from "./value-change";
 import formatBigNumber from "../utils/format-big-number";
 import RoundedCorner from "./rounded-corner";
-
-// style={{ borderTopColor: getBrandColor(channel) }}
 
 const HeadlineCard = ({
   channel,
@@ -17,7 +14,7 @@ const HeadlineCard = ({
 }) => {
   return (
     <RoundedCorner>
-      <section className="card headline">
+      <section className={`card headline ${channel}`}>
         <header>
           <BrandLogo brand={channel} />
           <div>{userName}</div>
