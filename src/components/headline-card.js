@@ -3,9 +3,9 @@ import BrandLogo from "./brand-logo";
 import "./card.css";
 import getBrandColor from "../utils/brand-color";
 import ValueChange from "./value-change";
-import formatBigNumber from "./../utils/format-big-number";
+import formatBigNumber from "../utils/format-big-number";
 
-const ChannelCard = ({
+const HeadlineCard = ({
   channel,
   userName,
   followerCount,
@@ -33,4 +33,4 @@ const ChannelCard = ({
   );
 };
 
-export default ChannelCard;
+export default HeadlineCard;

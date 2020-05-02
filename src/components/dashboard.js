@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TotalFollowers from "./total-followers";
 // import DarkModeSwitch from "./dark-mode-switch";
-import SocialFollowersList from "./social-followers-list";
+import HeadlineList from "./headline-list";
 import "./dashboard.css";
 import { headlineDataStore } from "./../assets/data/data-store";
 import OverviewList from "./overview-list";
@@ -21,7 +21,7 @@ const Dashboard = () => {
       </header>
       {/* <DarkModeSwitch /> */}
       <section id="headlines">
-        <SocialFollowersList followerData={headlineData} />
+        <HeadlineList followerData={headlineData} />
       </section>
       <section id="overview">
         <header>

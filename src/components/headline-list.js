@@ -1,16 +1,14 @@
 import React from "react";
 
-import ChannelCard from "./channel-card";
+import HeadlineCard from "./headline-card";
 
-const SocialFollowersList = ({ followerData }) => {
-  //const [followerData] = useState(dataStore);
-
+const HeadlineList = ({ followerData }) => {
   return (
     <ul>
       {followerData.map((channel) => {
         return (
           <li key={channel.id}>
-            <ChannelCard
+            <HeadlineCard
               channel={channel.channel}
               userName={channel.userName}
               followerCount={channel.followerCount}
@@ -24,4 +22,4 @@ const SocialFollowersList = ({ followerData }) => {
   );
 };
 
-export default SocialFollowersList;
+export default HeadlineList;
