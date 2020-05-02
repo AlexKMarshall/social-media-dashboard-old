@@ -17,7 +17,7 @@ const dataStore = [
     id: 3,
     channel: "instagram",
     userName: "@realnathanf",
-    followerCount: 11059,
+    followerCount: 11734,
     dailyFollowerChange: 1099,
   },
   {

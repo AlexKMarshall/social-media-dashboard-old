@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
-const TotalFollowers = () => {
-  const [followerTotal] = useState(0);
-
+const TotalFollowers = ({ count }) => {
   const formatNumber = (count) => count.toLocaleString(undefined);
 
-  return <div>Total Followers: {formatNumber(followerTotal)}</div>;
+  return <div>Total Followers: {formatNumber(count)}</div>;
 };
 
 export default TotalFollowers;
