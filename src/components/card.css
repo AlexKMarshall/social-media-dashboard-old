@@ -9,8 +9,12 @@
 .card.headline {
   align-items: center;
   margin-bottom: 25px;
-
   font-size: 12px;
+}
+
+.card.overview {
+  padding: 25px;
+  margin-bottom: 15px;
 }
 
 .card header {
@@ -25,7 +29,14 @@
   border-top-width: 4px;
   border-top-style: solid;
   font-size: 12px;
-  font-weight: 700;
+}
+
+.card.overview header {
+  font-size: 1rem;
+}
+
+.card.overview header {
+  margin-bottom: 30px;
 }
 
 .card.overview header {
@@ -35,6 +46,12 @@
 .card.overview .content {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+}
+
+.value-change {
+  display: flex;
+  align-items: center;
 }
 
 .card.headline header * {
@@ -43,12 +60,16 @@
 
 .card.headline .big-number {
   font-size: 54px;
-  font-weight: 700;
   margin-bottom: 4px;
+}
+
+.card.overview .big-number {
+  font-size: 30px;
 }
 
 .card.headline .stat-label {
   font-size: 12px;
+  font-weight: 400;
   letter-spacing: 0.42em;
   text-transform: uppercase;
 }
@@ -68,10 +89,10 @@
   font-weight: 700;
 }
 
-.card .up {
+.value-change.up {
   color: hsl(163, 72%, 41%);
 }
 
-.card .down {
+.value-change.down {
   color: hsl(356, 69%, 56%);
 }

@@ -6,7 +6,7 @@ const ValueChange = ({ change, label, className }) => {
 
   // TODO return a string to handle spacing between label and value properly
   return (
-    <div className={`${direction} ${className}`}>
+    <div className={`value-change ${direction} ${className}`}>
       <UpDownIndicator direction={direction} />
       <div>{Math.abs(change)}</div>
       <p>{label}</p>
