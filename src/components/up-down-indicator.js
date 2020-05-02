@@ -1,13 +1,10 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-const faIconName = {
-  up: "caret-up",
-  down: "caret-down",
-};
+import iconDown from "./../assets/icons/icon-down.svg";
+import iconUp from "./../assets/icons/icon-up.svg";
 
 const UpDownIndicator = ({ direction }) => {
-  return <FontAwesomeIcon icon={faIconName[direction]} />;
+  const icon = direction === "up" ? iconUp : iconDown;
+  return <img src={icon} alt={`${direction} arrow`} className="svg" />;
 };
 
 export default UpDownIndicator;
