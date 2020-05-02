@@ -13,7 +13,7 @@ const Dashboard = () => {
     .reduce((acc, cur) => acc + cur);
 
   return (
-    <div className="dashboard">
+    <div className="dashboard dark-theme">
       <header>
         <h1 className="impact-text">Social Media Dashboard</h1>
         <TotalFollowers count={totalFollowers} />
