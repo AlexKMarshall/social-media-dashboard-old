@@ -49,11 +49,6 @@
   align-items: baseline;
 }
 
-.value-change {
-  display: flex;
-  align-items: center;
-}
-
 .card.headline header * {
   margin: 0 4px;
 }
@@ -84,9 +79,14 @@
   align-items: center;
 }
 
-.card.headline footer .daily-follower-change * {
+.value-change {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.value-change * {
   margin: 0 0.125em;
-  font-weight: 700;
 }
 
 .value-change.up {

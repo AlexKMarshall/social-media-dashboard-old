@@ -22,3 +22,7 @@ header {
 .impact-text {
   color: hsl(230, 17%, 14%);
 }
+
+.dashboard h2 {
+  margin-bottom: 30px;
+}
