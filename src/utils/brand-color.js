@@ -1,5 +1,5 @@
 const brandColors = {
-  facebook: "hsl(195, 100%, 50%)",
+  facebook: "hsl(208, 90%, 53%)",
   youtube: "hsl(348, 97%, 39%)",
 };
 

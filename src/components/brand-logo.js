@@ -8,7 +8,7 @@ const brandIconMap = {
 };
 
 const BrandLogo = ({ brand }) => {
-  return <img src={brandIconMap[brand]} alt="" className="svg" />;
+  return <img src={brandIconMap[brand]} alt="" />;
 };
 
 export default BrandLogo;
