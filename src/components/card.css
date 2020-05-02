@@ -39,6 +39,7 @@
 .card footer .daily-follower-change {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .card footer .daily-follower-change * {
