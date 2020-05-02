@@ -1,5 +1,8 @@
 .dashboard {
   padding: 50px 25px;
+  /* Setting position:relative allows a z-index, to stack it behind the color stripes */
+  position: relative;
+  z-index: -999;
 }
 
 .dashboard > header {

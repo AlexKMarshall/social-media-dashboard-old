@@ -1,4 +1,5 @@
 .dashboard {
+  --main-bg-color: white;
   --main-text-color: hsl(228, 12%, 44%);
   --impact-text-color: hsl(230, 17%, 14%);
   --card-color: hsl(227, 47%, 96%);
@@ -6,6 +7,7 @@
 }
 
 .dashboard {
+  background: var(--main-bg-color);
   color: var(--main-text-color);
   border-color: var(--main-text-color);
 }
