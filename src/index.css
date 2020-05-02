@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsl(228, 12%, 44%);
+  border-color: hsl(228, 12%, 44%);
 }
 
 code {
