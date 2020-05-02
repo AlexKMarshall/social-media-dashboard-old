@@ -8,7 +8,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <header>
-        <h1>Social Media Dashboard</h1>
+        <h1 className="impact-text">Social Media Dashboard</h1>
         <TotalFollowers />
       </header>
       <DarkModeSwitch />

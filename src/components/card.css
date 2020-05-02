@@ -21,9 +21,14 @@
   font-weight: 700;
 }
 
+.card header * {
+  margin: 0 4px;
+}
+
 .card .big-number {
   font-size: 54px;
   font-weight: 700;
+  margin-bottom: 4px;
 }
 
 .card .stat-label {
