@@ -1,14 +1,14 @@
 import React from "react";
 import "./App.css";
-import TotalFollowers from "./components/total-followers";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faCaretUp, faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import Dashboard from "./components/dashboard";
+
+library.add(fab, faCaretUp, faCaretDown);
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Social Media Dashboard</h1>
-      <TotalFollowers />
-    </div>
-  );
+  return <Dashboard />;
 }
 
 export default App;

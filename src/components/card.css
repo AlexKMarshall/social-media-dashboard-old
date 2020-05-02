@@ -1,0 +1,61 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.card header {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-width: 4px;
+  border-top-style: solid;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card header * {
+  margin: 0 4px;
+}
+
+.card .big-number {
+  font-size: 54px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.card .stat-label {
+  font-size: 12px;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+}
+
+.card footer {
+  padding: 30px 0;
+}
+
+.card footer .daily-follower-change {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card footer .daily-follower-change * {
+  margin: 0 0.125em;
+  font-weight: 700;
+}
+
+.card footer .up {
+  color: hsl(163, 72%, 41%);
+}
+
+.card footer .down {
+  color: hsl(356, 69%, 56%);
+}
