@@ -12,7 +12,7 @@ const ChannelCard = ({
   dailyFollowerChange,
 }) => {
   return (
-    <section className="card">
+    <section className="card headline">
       <header style={{ borderTopColor: getBrandColor(channel) }}>
         <BrandLogo brand={channel} />
         <div>{userName}</div>
@@ -22,7 +22,11 @@ const ChannelCard = ({
       </div>
       <div className="stat-label">{followerDescription || "followers"}</div>
       <footer>
-        <ValueChange change={dailyFollowerChange} label="Today" />
+        <ValueChange
+          change={dailyFollowerChange}
+          label="Today"
+          className="daily-follower-change"
+        />
       </footer>
     </section>
   );
