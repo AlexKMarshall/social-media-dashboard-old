@@ -2,7 +2,7 @@ import React from "react";
 import BrandLogo from "./brand-logo";
 import "./card.css";
 import getBrandColor from "../utils/brand-color";
-import DailyFollowerChange from "./daily-follower-change";
+import ValueChange from "./value-change";
 
 const ChannelCard = ({
   channel,
@@ -22,7 +22,7 @@ const ChannelCard = ({
       </div>
       <div className="stat-label">{followerDescription || "followers"}</div>
       <footer>
-        <DailyFollowerChange change={dailyFollowerChange} />
+        <ValueChange change={dailyFollowerChange} label="Today" />
       </footer>
     </section>
   );

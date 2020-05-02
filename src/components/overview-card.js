@@ -1,6 +1,6 @@
 import React from "react";
 import BrandLogo from "./brand-logo";
-import DailyFollowerChange from "./daily-follower-change";
+import ValueChange from "./value-change";
 
 const OverviewCard = ({ overview }) => {
   const { type, channel, value, percentChange } = overview;
@@ -13,7 +13,7 @@ const OverviewCard = ({ overview }) => {
       </header>
       <div className="content">
         <div className="big-number impact-text">{value}</div>
-        <DailyFollowerChange change={percentChange} />
+        <ValueChange change={percentChange} label="%" />
       </div>
     </section>
   );

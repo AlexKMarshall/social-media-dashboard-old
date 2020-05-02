@@ -52,10 +52,10 @@
   font-weight: 700;
 }
 
-.card footer .up {
+.card .up {
   color: hsl(163, 72%, 41%);
 }
 
-.card footer .down {
+.card .down {
   color: hsl(356, 69%, 56%);
 }
