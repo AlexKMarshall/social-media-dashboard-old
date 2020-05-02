@@ -1,4 +1,4 @@
-const dataStore = [
+export const headlineDataStore = [
   {
     id: 1,
     channel: "facebook",
@@ -29,5 +29,3 @@ const dataStore = [
     dailyFollowerChange: -144,
   },
 ];
-
-export default dataStore;

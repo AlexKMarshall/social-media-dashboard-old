@@ -3,12 +3,13 @@ import TotalFollowers from "./total-followers";
 // import DarkModeSwitch from "./dark-mode-switch";
 import SocialFollowersList from "./social-followers-list";
 import "./dashboard.css";
-import dataStore from "./../assets/data/data-store";
+import { headlineDataStore } from "./../assets/data/data-store";
+import OverviewList from "./overview-list";
 
 const Dashboard = () => {
-  const [followerData] = useState(dataStore);
+  const [headlineData] = useState(headlineDataStore);
 
-  const totalFollowers = followerData
+  const totalFollowers = headlineData
     .map((channel) => Number.parseInt(channel.followerCount))
     .reduce((acc, cur) => acc + cur);
 
@@ -20,12 +21,13 @@ const Dashboard = () => {
       </header>
       {/* <DarkModeSwitch /> */}
       <section id="headlines">
-        <SocialFollowersList followerData={followerData} />
+        <SocialFollowersList followerData={headlineData} />
       </section>
       <section id="overview">
         <header>
           <h2>Overview - Today</h2>
         </header>
+        <OverviewList />
       </section>
     </div>
   );
