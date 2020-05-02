@@ -1,9 +1,11 @@
 import React from "react";
 import BrandLogo from "./brand-logo";
 import "./card.css";
-import getBrandColor from "../utils/brand-color";
+// import getBrandColor from "../utils/brand-color";
 import ValueChange from "./value-change";
 import formatBigNumber from "../utils/format-big-number";
+
+// style={{ borderTopColor: getBrandColor(channel) }}
 
 const HeadlineCard = ({
   channel,
@@ -14,7 +16,7 @@ const HeadlineCard = ({
 }) => {
   return (
     <section className="card headline">
-      <header style={{ borderTopColor: getBrandColor(channel) }}>
+      <header>
         <BrandLogo brand={channel} />
         <div>{userName}</div>
       </header>
