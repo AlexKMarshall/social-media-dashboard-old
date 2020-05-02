@@ -17,13 +17,23 @@ const ChannelCard = ({
         <BrandLogo brand={channel} />
         <div>{userName}</div>
       </header>
-      <div className="big-number impact-text">{followerCount}</div>
+      <div className="big-number impact-text">
+        {formatBigNumber(followerCount)}
+      </div>
       <div className="stat-label">{followerDescription || "followers"}</div>
       <footer>
         <DailyFollowerChange change={dailyFollowerChange} />
       </footer>
     </section>
   );
+};
+
+const formatBigNumber = (number) => {
+  const breakPointK = 10000;
+  if (number < breakPointK) return number;
+
+  const thousands = Math.floor(number / 1000);
+  return `${thousands}k`;
 };
 
 export default ChannelCard;
