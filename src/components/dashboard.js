@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TotalFollowers from "./total-followers";
-import DarkModeSwitch from "./dark-mode-switch";
+// import DarkModeSwitch from "./dark-mode-switch";
 import SocialFollowersList from "./social-followers-list";
 import "./dashboard.css";
 import dataStore from "./../assets/data/data-store";
