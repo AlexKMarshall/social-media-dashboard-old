@@ -4,7 +4,7 @@ import HeadlineCard from "./headline-card";
 
 const HeadlineList = ({ followerData }) => {
   return (
-    <ul>
+    <ul className="grid-container">
       {followerData.map((channel) => {
         return (
           <li key={channel.id}>
