@@ -16,7 +16,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: #ababab;
+  background: var(--toggle-bg);
   border-radius: 20px;
   transition: all 100ms;
 }
@@ -33,9 +33,9 @@
   transition: all 100ms;
 }
 
-input:checked + .sliding-groove {
+/* input:checked + .sliding-groove {
   background: red;
-}
+} */
 
 input:checked + .sliding-groove::after {
   transform: translateX(24px);
