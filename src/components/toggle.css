@@ -3,10 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
 }
 
 .toggle-label p {
+  margin-right: 14px;
   transition: all 300ms;
 }
 

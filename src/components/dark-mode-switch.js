@@ -3,7 +3,7 @@ import "./toggle.css";
 
 const DarkModeSwitch = ({ checked, toggle }) => {
   return (
-    <label className="toggle-label" htmlFor="theme-toggle">
+    <label className="toggle-label dark-mode-switch" htmlFor="theme-toggle">
       <p className="label-text">Dark Mode</p>
       <input
         type="checkbox"
