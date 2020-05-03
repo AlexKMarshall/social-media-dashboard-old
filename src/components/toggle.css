@@ -6,6 +6,10 @@
   margin-bottom: 15px;
 }
 
+.toggle-label p {
+  transition: all 300ms;
+}
+
 .toggle-label input {
   display: none;
 }
@@ -16,7 +20,7 @@
   position: relative;
   background: var(--toggle-bg);
   border-radius: 20px;
-  transition: all 100ms;
+  transition: all 300ms;
 }
 
 .sliding-groove::after {
@@ -33,4 +37,16 @@
 
 input:checked + .sliding-groove::after {
   transform: translateX(24px);
+}
+
+.toggle-label:hover {
+  cursor: pointer;
+}
+
+.toggle-label:hover {
+  color: var(--impact-text-color);
+}
+
+.toggle-label:hover .sliding-groove {
+  background: var(--toggle-hover-bg);
 }
