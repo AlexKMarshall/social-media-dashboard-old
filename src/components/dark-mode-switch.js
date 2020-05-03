@@ -1,5 +1,5 @@
 import React from "react";
-// import "./toggle.css";
+import "./toggle.css";
 
 const DarkModeSwitch = ({ checked, toggle }) => {
   return (
