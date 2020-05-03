@@ -7,7 +7,7 @@ import OverviewList from "./overview-list";
 
 const Dashboard = () => {
   const [headlineData] = useState(headlineDataStore);
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   const toggleTheme = () =>
     setTheme((theme) => (theme === "light" ? "dark" : "light"));
@@ -22,7 +22,7 @@ const Dashboard = () => {
         <h1 className="impact-text">Social Media Dashboard</h1>
         <TotalFollowers count={totalFollowers} />
       </header>
-      <DarkModeSwitch toggle={toggleTheme} />
+      <DarkModeSwitch checked={theme === "dark"} toggle={toggleTheme} />
       <section id="headlines">
         <HeadlineList followerData={headlineData} />
       </section>

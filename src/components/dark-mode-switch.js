@@ -1,7 +1,7 @@
 import React from "react";
-import "./toggle.css";
+// import "./toggle.css";
 
-const DarkModeSwitch = ({ toggle }) => {
+const DarkModeSwitch = ({ checked, toggle }) => {
   return (
     <label className="toggle-label" htmlFor="theme-toggle">
       <p className="label-text">Dark Mode</p>
@@ -9,6 +9,7 @@ const DarkModeSwitch = ({ toggle }) => {
         type="checkbox"
         name="theme-toggle"
         id="theme-toggle"
+        checked={checked}
         onClick={toggle}
       />
       <div className="sliding-groove"></div>
