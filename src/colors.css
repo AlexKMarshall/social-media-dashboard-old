@@ -11,6 +11,7 @@
     hsl(146, 68%, 55%)
   );
   --toggle-button: var(--main-bg-color);
+  --bg-pattern: hsl(225, 100%, 98%);
 }
 
 .dashboard.dark-theme {
@@ -26,6 +27,7 @@
   );
   --toggle-hover-bg: var(--toggle-bg);
   --toggle-button: var(--card-color);
+  --bg-pattern: hsl(232, 19%, 15%);
 }
 
 .dashboard {
