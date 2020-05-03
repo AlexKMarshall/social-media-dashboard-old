@@ -18,23 +18,25 @@ const Dashboard = () => {
 
   return (
     <div className={`dashboard ${theme}-theme`}>
-      <header>
-        <div className="heading">
-          <h1 className="impact-text">Social Media Dashboard</h1>
-          <TotalFollowers count={totalFollowers} />
-        </div>
-        <DarkModeSwitch checked={theme === "dark"} toggle={toggleTheme} />
-      </header>
-
-      <section id="headlines">
-        <HeadlineList followerData={headlineData} />
-      </section>
-      <section id="overview">
+      <main>
         <header>
-          <h2>Overview - Today</h2>
+          <div className="heading">
+            <h1 className="impact-text">Social Media Dashboard</h1>
+            <TotalFollowers count={totalFollowers} />
+          </div>
+          <DarkModeSwitch checked={theme === "dark"} toggle={toggleTheme} />
         </header>
-        <OverviewList />
-      </section>
+
+        <section id="headlines">
+          <HeadlineList followerData={headlineData} />
+        </section>
+        <section id="overview">
+          <header>
+            <h2>Overview - Today</h2>
+          </header>
+          <OverviewList />
+        </section>
+      </main>
     </div>
   );
 };
