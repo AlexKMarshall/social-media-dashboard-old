@@ -27,7 +27,7 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: white;
+  background: var(--toggle-button);
   top: 4px;
   left: 4px;
   transition: all 100ms;
