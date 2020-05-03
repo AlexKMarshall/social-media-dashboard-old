@@ -3,8 +3,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 48px;
-  height: 24px; */
   margin-bottom: 15px;
 }
 
@@ -16,10 +14,6 @@
   width: 48px;
   height: 24px;
   position: relative;
-  /* top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; */
   background: var(--toggle-bg);
   border-radius: 20px;
   transition: all 100ms;
@@ -36,10 +30,6 @@
   left: 4px;
   transition: all 100ms;
 }
-
-/* input:checked + .sliding-groove {
-  background: red;
-} */
 
 input:checked + .sliding-groove::after {
   transform: translateX(24px);
