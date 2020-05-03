@@ -18,6 +18,7 @@
   left: 0;
   background-color: var(--bg-pattern);
   border-radius: 0 0 20px 20px;
+  transition: background-color 300ms;
   z-index: -2;
 }
 
